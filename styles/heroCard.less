@@ -1,0 +1,117 @@
+@import './settings.less';
+
+.hero-card {
+  overflow: hidden;
+  position: relative;
+
+  height: 329px;
+  outline: 3px solid #fff;
+  width: 100%;
+}
+
+.hero-card.active {
+  outline: 3px solid @primary;
+}
+
+.hero-card:hover {
+  height: 329px;
+  outline: 3px solid @primary;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hero-card-img img {
+  height: 332px;
+  width: 100%;
+}
+
+.hero-card-img{
+  position:relative;
+}
+
+.hero-card-img .gradiant{
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: 0;
+  background-image: linear-gradient(180deg, rgba(255, 0, 0, 0), #000000);
+}
+
+.hero-card-content {
+  bottom: 30px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card-content-title{
+  font-family: 'Obelix Pro' !important;
+}
+
+.card-content-arrow {
+  align-items: center;
+  bottom: 14px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  svg {
+    transition: all 0.2s linear;
+    width: 100%;
+    &:hover {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.white-arrow {
+  color: white !important;
+  //   width: 50px;
+  font-size: 24px;
+  z-index: 99;
+}
+
+.hero-card.added {
+  border: 3px solid @primary;
+}
+
+
+.hover-card {
+  align-items: center;
+  background-color: @secondary;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 30px;
+  padding-top: 0px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transform: translate(0, 100%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  &.hoverShow {
+    transform: translate(0, 0);
+  }
+}
+
+.hover-card-item {
+  padding: 5px 0;
+}
+
+.white-arrow:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .hero-card-img img {
+    height: auto;
+  }
+}

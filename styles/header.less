@@ -1,0 +1,81 @@
+@import 'settings';
+@import 'tools';
+
+@module: header;
+
+.@{module} {
+  padding: 12px;
+}
+
+.header-wrapper {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px dotted #dcdcdc;
+  display: flex;
+  height: 13vh;
+  padding: 0 50px;
+}
+
+.left-menu-item {
+  padding: 0 20px;
+}
+
+.left-menu-logo {
+  font-size: 20px;
+}
+
+.mobile-menu {
+  width: 100%;
+}
+
+.mobile-menu .left-menu-logo {
+  font-size: 16px;
+  text-align: center;
+}
+
+.left-menu-item:hover {
+  cursor: pointer;
+}
+
+.left-menu-item .active {
+  border-bottom: 3px solid @secondary;
+  padding-bottom: 6px;
+}
+
+.filter-text {
+  color: @major-2nd;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-wrapper {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.fixed-position {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+
+  .pc-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .header-wrapper {
+    padding: 0 0;
+  }
+
+  .ant-drawer-title {
+    text-align: center !important;
+  }
+}

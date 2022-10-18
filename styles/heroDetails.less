@@ -1,0 +1,60 @@
+@import './settings.less';
+
+.details-full {
+  max-height: 100vh;
+}
+
+.full-image {
+  height: 87vh;
+  width: 100%;
+}
+
+.left-side {
+  position: relative;
+}
+
+.action-container {
+  bottom: 80px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.detail-col {
+  height: 87vh;
+  overflow-y: scroll;
+  padding: 40px 20px;
+}
+
+.details-label {
+  color: black;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.relatedItems img {
+  border: 2px solid @secondary;
+  border-radius: 50%;
+  height: 60px;
+  margin: 0 10px;
+  width: 60px;
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .details-full {
+    height: auto !important;
+  }
+
+  .full-image {
+    height: auto;
+  }
+
+  .mobile-top {
+    margin-top: 40px;
+  }
+
+  .detail-col {
+    height: auto;
+    overflow-y: auto;
+  }
+}

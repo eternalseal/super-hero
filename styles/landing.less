@@ -1,0 +1,70 @@
+.enter-bg {
+  background-color: #1990ff;
+  overflow: hidden;
+}
+
+.landing-hero-bg {
+  background: url(/images/enter_bg.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.landing-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.landing-items .landing-item {
+  width: 50%;
+}
+
+.landing-item .hero-img {
+  width: 80%;
+}
+
+.landing-items {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.landing-content-text h1 {
+  line-height: 55px;
+}
+
+.hanging-spider-man .haning-spider {
+  position: absolute !important;
+  left: inherit !important;
+  bottom: inherit !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 28% !important;
+  min-width: 28% !important;
+  min-height: 28% !important;
+}
+
+@media (min-width: 720px) and (max-width: 1366px) {
+  .hanging-spider-man .haning-spider {
+    width: 25% !important;
+  }
+
+  .landing-item .hero-img {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .hanging-spider-man .haning-spider {
+    display: none !important;
+  }
+
+  .landing-item .hero-img {
+    width: 100% !important;
+  }
+
+  .landing-items {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
